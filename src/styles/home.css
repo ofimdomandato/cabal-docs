@@ -1,0 +1,26 @@
+.ant-btn-primary {
+  background-color: #099 !important;
+  border-color: #099 !important;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background-color: #0aa !important;
+  border-color: #0aa !important;
+}
+
+.ant-btn-primary:active, .ant-btn-primary.active {
+  background-color: #066 !important;
+  border-color: #066 !important;
+}
+
+.ant-btn:hover, .ant-btn:focus {
+  color: #099 !important;
+  border-color: #099 !important;
+
+}
+
+.ant-btn:active, .ant-btn.active {
+  color: #066 !important;
+  border-color: #066 !important;
+
+}

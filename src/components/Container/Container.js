@@ -5,18 +5,18 @@ import { getHeaderHeightState } from '../../store/selectors';
 class Container extends Component {
   render() {
     const {
-      sidebarDocked, 
-      headerHeight, 
-      onPostPage, 
+      sidebarDocked,
+      headerHeight,
+      onPostPage,
     } = this.props;
 
     return (
       <div
         style={{
           position: "absolute",
-          top: (!sidebarDocked && onPostPage) ? headerHeight + 70: headerHeight + 30,
+          top: (!sidebarDocked && onPostPage) ? headerHeight + 64: headerHeight + 64,
           left: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "20%",
-          right: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "15%",
+          right: ((!sidebarDocked && onPostPage) || !onPostPage) ? 0 : "18%",
           bottom: 0,
           overflow: !sidebarDocked ? "auto" : "visible",
         }}
@@ -37,7 +37,7 @@ class Container extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return { 
+  return {
     headerHeight: getHeaderHeightState(state),
   }
 }

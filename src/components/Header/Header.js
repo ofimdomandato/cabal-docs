@@ -4,6 +4,7 @@ import sizeMe  from 'react-sizeme';
 import { connect } from "react-redux";
 import { updateHeaderHeight } from '../../actions/layout';
 import Menu from '../Menu';
+import logoCabal from "../../images/logo-cabal.png"
 
 class Header extends Component {
   componentDidUpdate = () => {
@@ -19,32 +20,19 @@ class Header extends Component {
           top: 0,
           width: "100%",
           zIndex: 1000,
-          background: 'cornflowerblue',
-          marginBottom: '1.45rem',
+          background: '#099'
         }}
       >
         <div
           style={{
-            margin: '0 auto',
-            maxWidth: 1360,
-            padding: '0.8rem 1.0875rem',
+            display: 'flex',
+            padding: '1rem 1.5rem'
           }}
         >
-          <div style={{
-            float: 'left',
-            marginBottom: '0.8em',
-          }}>
-            <h1 style={{ margin: 0, fontSize: "1.25rem"}}>
-              <Link
-                to="/"
-                style={{
-                  color: 'white',
-                  textDecoration: 'none',
-                }}
-              >
-                {siteTitle}
-              </Link>
-            </h1>
+          <div>
+            <Link to="/" >
+            <img src={logoCabal} alt={siteTitle} style={{maxWidth: 200, marginBottom: 0}}/>
+            </Link>
           </div>
           <Menu />
         </div>

@@ -6,6 +6,7 @@ import { getHeaderHeightState, getSidebarState, getAnchorState } from '../../sto
 import { onSetAnchorOpen, onSetSidebarOpen } from '../../actions/layout'
 import SidebarContents from '../SidebarContents';
 import TableOfContents from '../TableOfContents';
+import './ResponsiveTopBar.css'
 
 class ResponsiveTopBar extends Component {
   onSetSidebarOpen = () => {
@@ -33,26 +34,26 @@ class ResponsiveTopBar extends Component {
           position: "fixed",
           top: headerHeight,
           width: "100%",
-          height: 40,
+          height: 64,
           zIndex: 1001,
-          background: 'aliceblue',
-          marginBottom: '1.45rem'
+          background: '#EBF7F7',
+          // marginBottom: '1.45rem'
         }}
       >
         {!anchorOpen &&
           <div style={{
             position: "absolute",
-            left: 8,
-            top: 4
+            left: 12,
+            top: 12
           }}>
-            {sidebarOpen ? 
+            {sidebarOpen ?
               <Button icon="close" onClick={this.onSetSidebarClose}/> :
               <Button icon="bars" onClick={this.onSetSidebarOpen}/>
             }
             {sidebarOpen &&
               <div style={{
                 position: "fixed",
-                top: headerHeight + 40,
+                top: headerHeight + 64,
                 left: 0,
                 right: 0,
                 bottom: 0,
@@ -78,8 +79,8 @@ class ResponsiveTopBar extends Component {
         {!sidebarOpen &&
           <div style={{
             position: "absolute",
-            right: 8,
-            top: 4
+            right: 12,
+            top: 12
           }}>
             {anchorOpen ?
               <Button icon="close" onClick={this.onSetAnchorClose}/> :
@@ -88,7 +89,7 @@ class ResponsiveTopBar extends Component {
               {anchorOpen &&
               <div style={{
                 position: "fixed",
-                top: headerHeight + 40,
+                top: headerHeight + 64,
                 left: 0,
                 right: 10,
                 bottom: 0,

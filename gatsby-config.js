@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Markdown Starter',
+    title: 'Cabal Brasil - MGP Docs',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

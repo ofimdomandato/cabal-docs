@@ -1,10 +1,10 @@
 [
-  { 
+  {
     "name": "Docs",
-    "link":  "/docs/get-started/introduction"
+    "link":  "/docs/apresentacao/conceitos"
   },
   {
-    "name": "Blog",
-    "link": "/blog"
+    "name": "Home",
+    "link": "/"
   }
 ]

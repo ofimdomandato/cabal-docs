@@ -10,13 +10,13 @@ class ResponsiveAnchor extends Component {
       <div style={{
       position: "fixed",
       top: headerHeight + 30,
-      left: "85%",
+      left: "82%",
       right: 10,
       bottom: 0,
-      overflow: "hidden", 
+      overflow: "hidden",
     }} >
       <div style={{
-        position:"absolute", 
+        position:"absolute",
         left:10,
         right:0,
         top:0,

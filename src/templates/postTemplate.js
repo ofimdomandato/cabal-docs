@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { onSidebarContentExpand } from '../actions/layout'
 import "katex/dist/katex.min.css"
 import { getSidebarExpandedKey } from "../store/selectors";
+import "./postTemplate.css";
 
 function Template({
   data, // this prop will be injected by the GraphQL query below.

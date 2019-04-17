@@ -19,22 +19,16 @@ const Menu = () => {
       render={data => {
         const menuItems = data.allMenuItems.edges.map(edge => edge.node).reverse()
         return (
-          <div>
+          <div style={{ marginLeft: 'auto' }}>
             {menuItems.map(item => {
               return (
-                <div 
-                  style={{ marginLeft: "2em", float: "right" }}
-                  key={menuItems.indexOf(item)}
-                >
-                  <p style={{ margin:0, fontSize: "1rem" }}>
                     <Link
                       to={item.link}
-                      style={{ color: 'white', textDecoration: 'none' }}
+                      key={menuItems.indexOf(item)}
+                      style={{ color: 'white', textDecoration: 'none', marginLeft: "2em", fontSize: "1rem" }}
                     >
                       {item.name}
                     </Link>
-                  </p>
-                </div>
               )
             })}
           </div>

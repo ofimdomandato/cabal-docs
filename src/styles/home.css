@@ -13,13 +13,13 @@
   border-color: #066 !important;
 }
 
-.ant-btn:hover, .ant-btn:focus {
+.ant-btn:not(.ant-btn-primary):hover, .ant-btn:not(.ant-btn-primary):focus {
   color: #099 !important;
   border-color: #099 !important;
 
 }
 
-.ant-btn:active, .ant-btn.active {
+.ant-btn:not(.ant-btn-primary):active, .ant-btn:not(.ant-btn-primary).active {
   color: #066 !important;
   border-color: #066 !important;
 

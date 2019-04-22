@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cabal Brasil - MGP Docs',
+    title: 'Cabal Brasil - MGP',
+    siteUrl: `https://cabal.com.br/mgp-docs`,
+    description: `Documentação da Metodologia de Gestão de Projetos da Cabal Brasil`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -36,13 +38,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-markdown',
-        short_name: 'starter',
+        name: 'Cabal Brasil - MGP',
+        short_name: 'MGP Cabal',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#099',
+        theme_color: '#099',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/cabal-icon.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -71,7 +73,7 @@ module.exports = {
     `gatsby-plugin-remove-trailing-slashes`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
   pathPrefix: '/',
 }

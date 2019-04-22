@@ -14,7 +14,7 @@ import { pathPrefix } from '../../../gatsby-config'
 import MediaQuery from "react-responsive";
 import { onSetSidebarDocked } from "../../actions/layout";
 
-const Layout = ({ 
+const Layout = ({
   children,
   // setPostPageOn,
   // setPostPageOff,
@@ -42,7 +42,7 @@ const Layout = ({
     `}
     render={data => {
       const allPosts = data.allMarkdownRemark.edges.map(edge => edge.node.fields.slug)
-      let onPostPage 
+      let onPostPage
       if (typeof window !== 'undefined') {
         let path;
         if (pathPrefix.endsWith('/')) {
@@ -58,7 +58,7 @@ const Layout = ({
           onPostPage = false
         }
       }
-      
+
       return (
       <MediaQuery
         maxWidth={1000}
@@ -70,13 +70,15 @@ const Layout = ({
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
+            { name: 'theme-color', content: '#099' },
+            { name: 'apple-mobile-web-app-status-bar-style', content: '#099' },
           ]}
         >
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         {(matches && onPostPage) ? <ResponsiveTopBar root={sidebarRoot}/> : null}
-        {(!matches && onPostPage) ? 
+        {(!matches && onPostPage) ?
         <><ResponsiveSidebar root={sidebarRoot}/> <ResponsiveAnchor /> </>: null }
         <Container sidebarDocked={!matches} onPostPage={onPostPage}>
           {children}

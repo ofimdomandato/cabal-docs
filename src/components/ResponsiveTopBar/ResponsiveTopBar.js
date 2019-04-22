@@ -6,7 +6,6 @@ import { getHeaderHeightState, getSidebarState, getAnchorState } from '../../sto
 import { onSetAnchorOpen, onSetSidebarOpen } from '../../actions/layout'
 import SidebarContents from '../SidebarContents';
 import TableOfContents from '../TableOfContents';
-import './ResponsiveTopBar.css'
 
 class ResponsiveTopBar extends Component {
   onSetSidebarOpen = () => {
@@ -47,8 +46,8 @@ class ResponsiveTopBar extends Component {
             top: 12
           }}>
             {sidebarOpen ?
-              <Button icon="close" onClick={this.onSetSidebarClose}/> :
-              <Button icon="bars" onClick={this.onSetSidebarOpen}/>
+              <Button icon="close" onClick={this.onSetSidebarClose} style={{width: '40px', height: '40px', }}/> :
+              <Button icon="bars" onClick={this.onSetSidebarOpen} style={{width: '40px', height: '40px', }}/>
             }
             {sidebarOpen &&
               <div style={{
@@ -83,8 +82,8 @@ class ResponsiveTopBar extends Component {
             top: 12
           }}>
             {anchorOpen ?
-              <Button icon="close" onClick={this.onSetAnchorClose}/> :
-              <Button icon="ellipsis" onClick={this.onSetAnchorOpen}/>
+              <Button icon="close" onClick={this.onSetAnchorClose} style={{width: '40px', height: '40px', }}/> :
+              <Button icon="ellipsis" onClick={this.onSetAnchorOpen} style={{width: '40px', height: '40px', }}/>
             }
               {anchorOpen &&
               <div style={{

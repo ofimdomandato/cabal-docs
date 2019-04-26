@@ -5,7 +5,7 @@ parents: ["Processos"]
 ---
 
 <h1 class="page-title">
-  Processo da Gestão de Projetos
+  Processo da Gestão de Projetos da Cabal
 </h1>
 
 *Quando a solicitação do Cliente demandar um novo Projeto, sob orientação e supervisão da Gerência de Desenvolvimento Corporativo (Gedec), o fluxo abaixo mostra as etapas a serem seguidas desde solicitação até a entrega de valor pelo projeto:*
